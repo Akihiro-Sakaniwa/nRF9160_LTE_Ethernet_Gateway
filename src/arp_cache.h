@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2024 Akihiro Sakaniwa
+ *
+ * SPDX-License-Identifier: MIT License
+ */
 #ifndef __ARP_H__
 #define __ARP_H__
 

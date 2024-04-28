@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2024 Akihiro Sakaniwa
+ *
+ * SPDX-License-Identifier: MIT License
+ */
 #include "arp_cache.h"
 #include <zephyr/logging/log.h>
 #include <zephyr/logging/log_ctrl.h>
