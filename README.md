@@ -29,6 +29,9 @@ The MAC address can be specified in overlay.dts.
 Specifying LAN-CHIP requires changing both prj.conf and overlay.dts.
 
 
+https://qiita.com/Akihiro-Sakaniwa/items/4fc751ce5c827958ed06
+
+
 # Target SDK
 
 NCS v2.5.2
