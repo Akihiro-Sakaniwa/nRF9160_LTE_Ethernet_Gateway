@@ -7,6 +7,11 @@ This source program is LTE-Ethernet-Gateway for nRF9160.
 You will be able to communicate with the server via LTE from the communication device connected to the Ethernet side.
 Since port mapping is performed, multiple communication devices can be connected to the Ethernet side.
 
+# Target SDK
+
+NCS v2.5.2
+
+
 # Target board
 
 スイッチサイエンス nRF9160搭載 LTE-M/NB-IoT/GNSS対応 IoT開発ボード
