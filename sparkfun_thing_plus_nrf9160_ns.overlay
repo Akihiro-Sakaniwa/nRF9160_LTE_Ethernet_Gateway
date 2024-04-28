@@ -37,7 +37,6 @@
 		spi-max-frequency = <80000000>;
         int-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
         //local-mac-address = [XX XX XX XX XX XX]
-        local-mac-address = [A8 61 0A Ae 74 B4];
     };
 };
 &pinctrl {
