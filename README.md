@@ -7,6 +7,28 @@ This source program is LTE-Ethernet-Gateway for nRF9160.
 You will be able to communicate with the server via LTE from the communication device connected to the Ethernet side.
 Since port mapping is performed, multiple communication devices can be connected to the Ethernet side.
 
+I hope this is of some use to you.
+
+FOTA related functions have been omitted because the code would be complicated.
+
+When using,
+prj.conf
+overlay.dts
+Don't forget to change.
+
+Set the MTU of the LAN side device to 1280.
+
+The GW IP address is written in prj.conf.
+
+There are no DHCP related functions.
+
+Since the port mapping function is implemented, multiple units can be connected on the LAN side.
+
+The MAC address can be specified in overlay.dts.
+
+Specifying LAN-CHIP requires changing both prj.conf and overlay.dts.
+
+
 # Target SDK
 
 NCS v2.5.2
