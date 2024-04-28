@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/CMakeFiles/tfm"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/CMakeFiles/tfm.rule"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/CMakeFiles/tfm-complete.rule"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-build.rule"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-configure.rule"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-download.rule"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-install.rule"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-mkdir.rule"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-patch.rule"
+		},
+		{
+			"file" : "/Users/sakaniwa/work/nRF9160/LTE_ETH_GW/SINGLEHEAD_LTE_ETH_GW/nrf9160_lte_ethernet_gateway/build/modules/trusted-firmware-m/tfm-prefix/src/tfm-stamp/tfm-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"tfm"
+		],
+		"name" : "tfm"
+	}
+}

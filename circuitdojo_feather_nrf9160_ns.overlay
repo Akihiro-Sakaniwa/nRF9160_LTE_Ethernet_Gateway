@@ -1,0 +1,66 @@
+// To get started, press Ctrl+Space (or Option+Esc) to bring up the completion menu and view the available nodes.
+
+// You can also use the buttons in the sidebar to perform actions on nodes.
+// Actions currently available include:
+
+// * Enabling / disabling the node
+// * Adding the bus to a bus
+// * Removing the node
+// * Connecting ADC channels
+
+// For more help, browse the DeviceTree documentation at https://docs.zephyrproject.org/latest/guides/dts/index.html
+// You can also visit the nRF DeviceTree extension documentation at https://nrfconnect.github.io/vscode-nrf-connect/devicetree/nrfdevicetree.html
+
+
+&i2c1 {
+	status = "disabled";
+    /delete-node/ pcf85063a@51;
+    ///delete-node/ lis2dh@18;
+};
+
+/ {
+    chosen {
+        zephyr,console = &uart0;
+        //zephyr,shell-uart = &uart0;
+        //zephyr,uart-mcumgr = &uart0;
+        nordic,pm-ext-flash = &w25q32jv;
+    };
+};
+
+&spi1 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+
+	cs-gpios = <&gpio0 18 GPIO_ACTIVE_LOW>;
+
+	pinctrl-0 = <&spi1_default>;
+	pinctrl-1 = <&spi1_sleep>;
+	pinctrl-names = "default", "sleep";
+	eth0: eth0@0 {
+		compatible = "microchip,enc424j600";
+		//compatible = "microchip,enc28j60";
+		//compatible = "wiznet,w5500";
+		reg = <0>;
+		spi-max-frequency = <80000000>;
+        int-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
+        //local-mac-address = [XX XX XX XX XX XX];
+    };
+};
+&pinctrl {
+	spi1_default: spi1_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 19)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 21)>,
+				<NRF_PSEL(SPIM_MISO, 0, 22)>;
+		};
+	};
+
+	spi1_sleep: spi1_sleep {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 19)>,
+				<NRF_PSEL(SPIM_MOSI, 0, 21)>,
+				<NRF_PSEL(SPIM_MISO, 0, 22)>;
+			low-power-enable;
+		};
+	};
+};

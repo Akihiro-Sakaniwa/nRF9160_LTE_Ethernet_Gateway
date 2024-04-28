@@ -1,0 +1,25 @@
+#
+# Copyright (c) 2019 Nordic Semiconductor
+#
+# SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
+#
+
+source "Kconfig.zephyr"
+
+menu "nRF9160"
+
+config SIM_SAKURA_IOT
+	bool "SAKURA IoT SIM (44020,44051,44010)"
+	default n
+
+config SIM_SORACOM_PLAN_D
+	bool "SORACOM PLAN-D SIM (44010)"
+	default n
+
+
+module = NRF91
+module-str = nRF9160
+source "${ZEPHYR_BASE}/subsys/logging/Kconfig.template.log_config"
+
+
+endmenu
