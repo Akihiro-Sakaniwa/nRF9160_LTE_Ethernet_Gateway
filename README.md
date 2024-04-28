@@ -15,22 +15,27 @@ NCS v2.5.2
 # Target board
 
 スイッチサイエンス nRF9160搭載 LTE-M/NB-IoT/GNSS対応 IoT開発ボード
+
 https://ssci.to/8999
 
 Actinius Icarus SoM DK
+
 https://www.actinius.com/icarus-som-dk
 
 
 # Target SPI LAN CHIP
 
 WIZNET W5500
+
 MICROCHIP ENC28J60
+
 MICROCHIP ENC424J600 (ENC624J600)
 
 
 # Target SIM
 
 SORACOM PLAN-D
+
 https://soracom.jp/store/13380/
 
 
@@ -45,4 +50,5 @@ Please use at your own risk.
 
 # License
 LicenseRef-Nordic-5-Clause
+
 MIT License
