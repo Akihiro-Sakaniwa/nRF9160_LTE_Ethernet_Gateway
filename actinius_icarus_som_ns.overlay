@@ -94,12 +94,13 @@
     pinctrl-1 = <&spi1_sleep>;
 	pinctrl-names = "default", "sleep";
 	eth0: eth0@0 {
-        compatible = "microchip,enc424j600";
-		//compatible = "wiznet,w5500";
-		compatible = "microchip,enc28j60";
+        //compatible = "microchip,enc424j600";
+		compatible = "wiznet,w5500";
+		//compatible = "microchip,enc28j60";
 		reg = <0>;
 		spi-max-frequency = <80000000>;
         int-gpios = <&gpio0 1 GPIO_ACTIVE_LOW>;
+        //local-mac-address = [XX XX XX XX XX XX];
     };
  };
  
