@@ -1,1 +1,0 @@
-"nrf":"/opt/nordic/ncs/v2.5.2/nrf":"/opt/nordic/ncs/v2.5.2/nrf/sysbuild"
